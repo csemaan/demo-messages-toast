@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2W2 - H23 : Atelier de rattrapge de mi-session</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="all">
+</head>
+<body>
+  <h1>Simulation pour gérer des messages d'interface utilisateur (messages dits <code>toasts</code>)</h1>
+  <main>
+    <form>
+      <div class="champs-formulaire">
+        <div class="champ">
+          <label for="courriel">Adresse courriel : </label>
+          <input type="text" id="courriel" placeholder="Votre adresse courriel">
+        </div>
+        <div class="champ">
+          <label for="mdp">Mot de passe : </label>
+          <input type="password" id="mdp" placeholder="Votre mot de passe">
+        </div>
+      </div>
+      <div class="boutons-formulaire">
+        <input class="erreur" type="button" value="Erreur">
+        <input class="avertissement" type="button" value="Avertissement">
+        <input class="info" type="button" value="Info">
+        <input class="succes" type="button" value="Succès">
+      </div>
+    </form>
+  </main>
+  <div class="message-toast">
+    <input type="checkbox" id="cc-toast" checked>
+    <label for="cc-toast" class="texte-toast" title="Cliquez pour fermer"></label>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
